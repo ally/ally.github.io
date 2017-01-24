@@ -1,0 +1,84 @@
+skills:
+- Product & UX design
+- Prototyping
+- Front-end development
+- Design research
+- Public speaking
+
+contact:
+  - name: "Email"
+    link:  "ally@allyelle.com"
+  - name: "Twitter"
+    link:  "twitter.com/allyelle"
+  - name: "Instagram"
+    link:  "instagram.com/allyelle"
+  - name: "GitHub"
+    link:  "github.com/ally"
+  - name: "Speakerdeck"
+    link:  "instagram.com/allyelle"
+
+jobs:
+  - eHealth Africa 
+  - Edenspiekermann
+  - A Color Bright
+  - Icelab
+  - Inventive Labs
+
+clients:
+  - UNICEF
+  - Bill and Melinda Gates Foundation
+  - World Health Organisation
+  - Institute of Tropical Medicine Antwerp
+  - Red Bull
+  - Red Bull Music Academy
+  - Yours Truly
+  - Greenpeace
+  - Wirecard
+  - Wissenschaftskolleg zu Berlin
+  - Hitfox Group 
+  - Deckset
+  - Text Publishing
+
+talks:
+  - organiser: CSSConf AU
+    title: "Human Compatibility Error: How Novice Tech Users in West Africa Respond to your Fancy CSS"
+    date: 30 November 2016
+    location: Melbourne, Australia
+    video: http://cssconfau.com
+    slides: http://speakerdeck.com/allyelle
+    photos:  
+  - organiser: up.front
+    title: Designing Apps for Tech Newbies
+    date: 8 November 2016
+    location: Berlin, Germany
+    video: http://cssconfau.com
+    slides: http://speakerdeck.com/allyelle
+    photos: 
+  - organiser: eHealth Academy
+    title: Design principles and CSS – Created syllabus and taught a 3-day module
+    date: 3 - 5 August 2016
+    location: Conakry, Guinea
+    video: 
+    slides: 
+    photos:
+  - organiser: Global Health Security – Focus Africa
+    title: moderated panel discussion “How can eHealth improve public health in developing countries?”
+    date: 30 June 2016
+    location: Berlin, Germany
+    video: 
+    slides: 
+    photos:
+  - organiser: Stockholm School of Entrepreneurship
+    title: lead workshop on “Creative innovation, people, and play”
+    date: 12 - 13 March 2016
+    location: Stockholm, Sweden
+    video: 
+    slides: 
+    photos:
+
+photos:
+  - img: "/images/5.jpg"
+    caption: Maiduguri, Nigeria
+  - img: "/images/6.jpg"
+    caption: Conakry, Guinea
+

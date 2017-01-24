@@ -1,0 +1,82 @@
+---
+title: Ally Long – product design, front-end development
+---
+
+
+<div class="container--intro">
+  <div class="container--intro--foo">
+  <div class="container__text--intro">
+    <p class="">
+      <span class="text--bold">Ally Long</span>
+      <% data.content.skills.each do |skill| %>
+        <span><%= skill %></span>
+      <% end %>
+    </p>
+    <p class="text--small">
+      <span class="text--bold">Find me</span>
+      <% data.content.contact.each do |c| %>
+        <span><%= c.name %></span>
+      <% end %>
+    </p>
+  </div>
+  <div class="container--profile-img">
+    <%= image_tag("/images/allyelle-profile.jpg", :class => "image--profile") %>
+  </div>
+  </div>
+</div>
+<div class="container--divider">
+</div>
+
+<div class="container--work">
+  <p>I’ve worked as a designer and front-end developer in agencies and product companies. More recently I’ve been focusing on novice tech users and people in emerging economies.</p>
+
+  <p>
+    <span class="text--bold">I’ve worked for</span>   
+    <% data.content.jobs.each do |job| %>
+      <span><%= job %></span>
+    <% end %>
+  </p>
+
+  <p>
+    <span class="text--bold">Clients and partners include</span>   
+    <% data.content.clients.each do |client| %>
+      <span><%= client %></span>
+    <% end %>
+  </p>
+</div>
+
+<div class="container__header--talks">
+  <h2 class="text--hero">Talks and things</h2>
+</div>
+
+<div class="container--talks">
+  <ul class="list--clean">
+    <% data.content.talks.each do |talk| %>
+      <li>
+        <span class="text--bold"><%= talk.organiser %></span>
+        <span><%= talk.title %></span>
+        <span class="list__item--meta">
+          <span><%= talk.date %></span>
+          <span><%= talk.location %></span>
+          <% unless talk.video.blank? %>
+            <span><%= link_to("video", talk.video) %></span>
+          <% end %>
+          <% unless talk.slides.blank? %>
+            <span><%= link_to("slides", talk.slides) %></span>
+          <% end %>
+          <% unless talk.photos.blank? %>
+            <span><%= link_to("photos", talk.photos) %></span>
+          <% end %>
+        </span>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="container--photos">
+  <% data.content.photos.each do |photo| %>
+    <%#= image_tag(photo.img) %>
+    <span><%#= photo.caption %></span>
+  <% end %>
+</div>
+
