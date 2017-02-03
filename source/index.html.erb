@@ -3,19 +3,25 @@ title: Ally Long – product design, front-end development
 ---
 
 
-<div class="container--intro">
-  <div class="container--intro--foo">
+<div class="wrapper--intro">
+  <div class="container--intro">
   <div class="container__text--intro">
-    <p class="">
-      <span class="text--bold">Ally Long</span>
+    <p class="text--intro">
+      <span class="text--bold text--bling">Ally Long</span>
       <% data.content.skills.each do |skill| %>
-        <span><%= skill %></span>
-      <% end %>
+        <% skill_name = skill.split(" ") %>
+          <% skill_name.each do |sn| %>
+            <span<%= sn == skill_name.last ? " class='text--bling'" : nil %>><%= sn %></span>
+          <% end %>
+        <% end %>
+      <span class="text--bold text--bling">Accepting projects from Mar 2017</span>
     </p>
     <p class="text--small">
-      <span class="text--bold">Find me</span>
+      <span class="text--bold text--prefix">Find me</span>
       <% data.content.contact.each do |c| %>
-        <span><%= c.name %></span>
+        <span class="text__divider<%= c == data.content.contact.last ? " last" : nil %>">
+          <%= link_to(c.name, c.link) %>
+        </span>
       <% end %>
     </p>
   </div>
@@ -28,49 +34,74 @@ title: Ally Long – product design, front-end development
 </div>
 
 <div class="container--work">
-  <p>I’ve worked as a designer and front-end developer in agencies and product companies. More recently I’ve been focusing on novice tech users and people in emerging economies.</p>
+  <!-- <p>I’ve worked as a designer and front-end developer in agencies and product companies. More recently I’ve been focusing on novice tech users and people in emerging economies.</p> -->
+  <p>
+    <!-- I am a senior product designer and front-end developer.  -->
+    I help conceptualise, facilitate, design, prototype and build digital products. I've worked with agencies and international brands, as well as NGOs and non-profits to create useful solutions to complex problems. 
+    I have a particular interest in designing for novice tech users and people in emerging economies.
+    If you need help figuring out your product, <strong><a href="mailto:ally@allyelle.com">say hi</a></strong>.
+  </p>
 
   <p>
-    <span class="text--bold">I’ve worked for</span>   
+    <span class="text--bold text--prefix">I’ve worked for</span>   
     <% data.content.jobs.each do |job| %>
-      <span><%= job %></span>
+      <span<%= job ==  data.content.jobs.last ? " class='last'" : nil %>>
+        <a href="<%= job.link %>">
+          <% job_name = job.name.split(" ") %>
+          <% job_name.each do |jn| %>
+            <span<%= jn == job_name.last ? " class='text__divider--large'" : nil %>><%= jn %></span>
+          <% end %>
+        </a>
+      </span>
     <% end %>
   </p>
 
   <p>
-    <span class="text--bold">Clients and partners include</span>   
+    <span class="text--bold text--prefix">Clients and partners have included</span>   
     <% data.content.clients.each do |client| %>
-      <span><%= client %></span>
+      <span<%= client ==  data.content.clients.last ? " class='last'" : nil %>>
+        <% client_name = client.split(" ") %>
+        <% client_name.each do |cn| %>
+        <span<%= cn == client_name.last ? " class='text__divider--large'" : nil %>><%= cn %></span>
+        <% end %>
+      </span>
     <% end %>
   </p>
 </div>
 
-<div class="container__header--talks">
-  <h2 class="text--hero">Talks and things</h2>
+<div class="wrapper__header--talks">
+  <div class="container__header--talks">
+    <h2 class="text--hero">Talks & workshops</h2>
+  </div>
 </div>
 
-<div class="container--talks">
-  <ul class="list--clean">
-    <% data.content.talks.each do |talk| %>
-      <li>
-        <span class="text--bold"><%= talk.organiser %></span>
-        <span><%= talk.title %></span>
-        <span class="list__item--meta">
-          <span><%= talk.date %></span>
-          <span><%= talk.location %></span>
-          <% unless talk.video.blank? %>
-            <span><%= link_to("video", talk.video) %></span>
-          <% end %>
-          <% unless talk.slides.blank? %>
-            <span><%= link_to("slides", talk.slides) %></span>
-          <% end %>
-          <% unless talk.photos.blank? %>
-            <span><%= link_to("photos", talk.photos) %></span>
-          <% end %>
-        </span>
-      </li>
-    <% end %>
-  </ul>
+<div class="wrapper--talks">
+  <div class="container--talks">
+    <ul class="list--clean">
+      <% data.content.talks.each do |talk| %>
+        <li>
+          <span class="text--bold"><%= talk.organiser %></span>
+          <span><%= talk.title %></span>
+          <span class="list__item--meta">
+            <span><%= talk.date %></span>
+            <span><%= talk.location %></span>
+            <% unless talk.video.blank? %>
+              <span><%= link_to("video", talk.video) %></span>
+            <% end %>
+            <% unless talk.slides.blank? %>
+              <span><%= link_to("slides", talk.slides) %></span>
+            <% end %>
+            <% unless talk.photos.blank? %>
+              <span><%= link_to("photos", talk.photos) %></span>
+            <% end %>
+            <% unless talk.background.blank? %>
+              <span><%= link_to("background", talk.background) %></span>
+            <% end %>
+          </span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 <div class="container--photos">
@@ -80,3 +111,13 @@ title: Ally Long – product design, front-end development
   <% end %>
 </div>
 
+<div class="wrapper--colophon">
+  <div class="container--colophon">
+    <p>
+      <span class="text__divider">&copy; Ally Long <%= Date.today.year %></span>
+      Site created with Middleman,
+      hosted on GitHub,
+      using Cera PRO typeface by Jakob Runge.
+    </p>
+  </div>
+</div>

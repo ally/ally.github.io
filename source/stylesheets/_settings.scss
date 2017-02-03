@@ -3,16 +3,24 @@
 $dark-gray: #444148;
 $yellow: #F2B257;
 $blue: #4265E2;
+$bright-blue: #0000ff;
+$light-bright-blue: #00ffff;
 $aqua: #7DB7B3;
+$red: #E5645F;
+$pink: #ED69CB;
+$green: #84FA73;
 
 
 // type
-$font-family: "Cera DEMO", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: CeraPRO-Light, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-bold: CeraPRO-Bold, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-small: 1rem;
+$font-size-smaller: 1.5rem;
 $font-size-standard: 1.75rem;
 $font-size-medium: 2.625rem;
-$font-size-mid: 30px;
-$font-size-large: 5.625rem;
+$font-size-mid: 4rem;
+$font-size-large: 5.25rem;
+$font-weight-bold: 600;
 
 // media queries
 $max-site-width: 1200px;

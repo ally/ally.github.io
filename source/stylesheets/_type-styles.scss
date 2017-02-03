@@ -1,10 +1,30 @@
+// links
 
+@mixin link-color($color: white, $hover-color: $pink) {
+  color: $color;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  @include link-color;
+}
+
+b, strong {
+  font-family: $font-family-bold;
+}
+
+// text styles
 .text--small {
   font-size: $font-size-small;
 }
 
 .text--bold {
-  font-weight: 700;
+  font-family: $font-family-bold;
 }
 
 .text--hero {
@@ -19,13 +39,53 @@
   }
 }
 
+
+// circle dividers
+
+.text--prefix {
+  margin-right: 0.75em;
+}
+
+@mixin circle($size: 4px, $color: white) {
+  height: $size;
+  width: $size;
+  border-radius: $size;
+  background: $color;
+}
+
+[class^="text__divider"] {
+  white-space: nowrap;
+  &:after {
+    @include circle;
+    content: '';
+    display: inline-block;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    vertical-align: middle;
+  }
+  &.last:after,
+  .last &:after {
+    display: none;
+  }
+}
+
+.text__divider {
+  &--large:after {
+    @include circle($size: 8px);
+    margin-right: calc(0.75em - 4px);
+    @media only screen and (max-width: $medium-screen) {
+      @include circle($size: 6px);
+    }
+  }
+}
+
 // lists
 
 .list--clean {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  max-width: 720px;
+  // max-width: 720px;
   li {
     margin-bottom: 1.5em;
   }
@@ -40,21 +100,14 @@
 
 .list__item--meta span:not(:last-of-type) {
   &:after {
+    @include circle($color: $dark-gray);
     display: inline-block;
     content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: $dark-gray;
     vertical-align: middle;
     margin-left: 0.75em;
     margin-right: calc(0.75em - 4px);
   }
 }
-.list__item--meta span:last-of-type {
-  // &:after {display: none}
-}
-
 
 // images 
 

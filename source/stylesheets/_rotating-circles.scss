@@ -1,0 +1,90 @@
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anticw {
+  from {
+    transform: rotate(360deg);
+  }
+  to { 
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animate-gradient { 
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.text--bling {
+  $flourish-size: 16px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  &:after {
+    $size: 16px;
+    content: '';
+    display: inline-block;
+    height: $size;
+    width: $size;
+    margin-left: 1rem;
+    mask: url(../images/circle-outline.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    background-image: linear-gradient(-180deg, lighten($light-bright-blue, 30%) 0%, lighten($bright-blue, 15%) 100%);
+    background-size: 200% 200%;
+    animation-name: animate-gradient, rotate;
+    animation-duration: 2.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &:before {
+    // $size: 16px;
+    $size: 6px;
+    content: '';
+    position: absolute;
+    // right: 0;
+    right: 5px;
+    // top: 14px;
+    top: 18px;
+    z-index: 100;
+    display: block;
+    height: $size;
+    width: $size;
+    border-radius: $size;
+    background-color: white;
+    opacity: 0.85;
+  }
+  @media only screen and (max-width: $medium-screen) {
+    &:before {
+      top: 14px;
+    }
+  }
+  &:nth-child(even):after {
+    background-image: linear-gradient(-180deg, lighten($bright-blue, 15%) 0%, lighten($light-bright-blue, 30%) 100%);
+    animation-name: animate-gradient, rotate-anticw;
+    animation-duration: 2.75s, 4s;
+  }
+  &:nth-child(2):after {
+    animation-delay: .25s;
+  }
+  &:nth-child(3):after {
+    animation-delay: .35s;
+  }
+  &:nth-child(5):after {
+    animation-delay: .5s;
+  }
+  &:nth-child(6):after {
+    animation-delay: .6s;
+  }
+  &:last-of-type:after,
+  &:last-of-type:before {
+    display: none;
+  }
+}
