@@ -8,7 +8,9 @@ body {
   font-size: $font-size-standard;
   line-height: 1.5;
   color: white;
-  -webkit-font-smoothing: antialiased;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    -webkit-font-smoothing: antialiased;
+  }
   @media only screen and (max-width: $medium-screen) {
     border-width: 5px;
     font-size: $font-size-smaller;
@@ -61,6 +63,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: auto;
+  @media only screen and (max-width: $medium-screen) {
+    align-items: flex-start;
+  }
   @media only screen and (max-width: $small-screen) {
     width: 100%;
     background: linear-gradient(to right top, $dark-gray 50%, $blue 50%);
@@ -74,9 +79,11 @@ body {
   border-radius: 50%;
   @media only screen and (max-width: $medium-screen) {
     max-width: 160px;
+    margin-top: 30px;
   }
   @media only screen and (max-width: $small-screen) {
     max-width: 100px;
+    margin-top: 0;
   }
 }
 
@@ -149,8 +156,11 @@ body {
     display: block;
     height: 160px;
     background: linear-gradient(to right top, $blue 50%, $aqua 50%);
-    @media only screen and (max-width: $small-screen) {
+    @media only screen and (max-width: $medium-screen) {
       height: 80px;
+    }
+    @media only screen and (max-width: $small-screen) {
+      height: 40px;
     }
   }
 }

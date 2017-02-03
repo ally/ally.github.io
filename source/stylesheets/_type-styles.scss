@@ -19,6 +19,7 @@ b, strong {
 }
 
 // text styles
+
 .text--small {
   font-size: $font-size-small;
 }
@@ -86,7 +87,6 @@ b, strong {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  // max-width: 720px;
   li {
     margin-bottom: 1.5em;
   }
@@ -95,11 +95,11 @@ b, strong {
 .list__item--meta {
   display: block;
   margin-top: 0.5em;
-  font-weight: 400;
   font-size: $font-size-small;
 }
 
 .list__item--meta span:not(:last-of-type) {
+  white-space: nowrap;
   &:after {
     @include circle($color: $dark-gray);
     display: inline-block;

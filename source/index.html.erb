@@ -84,7 +84,14 @@ title: Ally Long – product design, front-end development
           <span><%= talk.title %></span>
           <span class="list__item--meta">
             <span><%= talk.date %></span>
-            <span><%= talk.location %></span>
+            <% location = talk.location.split(" ") %>
+            <% location.each do |l| %>
+              <% if l == location.last %>
+                <%= content_tag("span", l) %>
+              <% else %>
+                <%= l %>
+              <% end %>
+            <% end %>
             <% unless talk.video.blank? %>
               <span><%= link_to("video", talk.video) %></span>
             <% end %>
