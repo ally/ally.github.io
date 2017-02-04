@@ -11,7 +11,9 @@ title: Ally Long – product design, front-end development
       <% data.content.skills.each do |skill| %>
         <% skill_name = skill.split(" ") %>
           <% skill_name.each do |sn| %>
-            <span<%= sn == skill_name.last ? " class='text--bling'" : nil %>><%= sn %></span>
+            <%= 
+              sn == skill_name.last ? content_tag("span", sn, :class => "text--bling") : sn
+            %>
           <% end %>
         <% end %>
       <span class="text--bold text--bling">Accepting projects from Mar 2017</span>
