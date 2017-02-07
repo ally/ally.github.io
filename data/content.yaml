@@ -38,6 +38,7 @@ clients:
   - Red Bull Music Academy
   - UCLA
   - University of Melbourne
+  - Fontshop
   - Yours Truly
   - Greenpeace
   - Wirecard
@@ -85,8 +86,28 @@ talks:
     photos:
 
 photos:
-  - img: "/images/5.jpg"
-    caption: Maiduguri, Nigeria
+  - img: "/images/7.jpg"
+    caption: Asilah, Morocco
   - img: "/images/6.jpg"
     caption: Conakry, Guinea
-
+  - img: "/images/3.jpg"
+    caption: Tangier, Morocco
+  - img: "/images/15.jpg"
+    caption: Dubrovnik, Croatia
+  - img: "/images/5.jpg"
+    caption: Maiduguri, Nigeria
+  - img: "/images/10.jpg"
+    caption: San Miguel de Allende, Mexico
+  - img: "/images/9.jpg"
+    caption: Thu Bon River, Vietnam
+  - img: "/images/16.jpg"
+    caption: Sydney, Australia
+  - img: "/images/18.jpg"
+    caption: Asilah, Morocco
+  - img: "/images/14.jpg"
+    caption: Kano, Nigeria
+  - img: "/images/8.jpg"
+    caption: Moriyama, Japan
+  - img: "/images/21.jpg"
+    caption: Janjač, Bosnia
+  

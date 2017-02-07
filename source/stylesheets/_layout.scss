@@ -112,7 +112,8 @@ body {
     padding-bottom: 80px;
   }
   @media only screen and (max-width: $small-screen) {
-    padding: 40px 20px;
+    padding: 20px;
+    padding-bottom: 40px;
   }
 }
 
@@ -128,7 +129,6 @@ body {
   @media only screen and (max-width: $medium-screen) {
     padding-top: 0;
     padding-bottom: 0;
-
   }
   @media only screen and (max-width: $small-screen) {
     padding-top: 0;
@@ -157,11 +157,8 @@ body {
   &:before {
     content: '';
     display: block;
-    height: 160px;
-    background: linear-gradient(to right top, $blue 50%, $aqua 50%);
-    @media only screen and (max-width: $medium-screen) {
-      height: 80px;
-    }
+    height: 80px;
+    background: linear-gradient(to left top, $blue 50%, $dark-gray 50%);
     @media only screen and (max-width: $small-screen) {
       height: 40px;
     }
@@ -170,6 +167,6 @@ body {
 
 .container--colophon {
   @include container;
-  padding-top: 0;
+  padding-top: 40px;
   font-size: $font-size-small;
 }

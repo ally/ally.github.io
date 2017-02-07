@@ -113,11 +113,40 @@ title: Ally Long – product design, front-end development
   </div>
 </div>
 
-<div class="container--photos">
-  <% data.content.photos.each do |photo| %>
-    <%#= image_tag(photo.img) %>
-    <span><%#= photo.caption %></span>
-  <% end %>
+
+<div class="wrapper__header--photos">
+  <div class="container__header--photos">
+    <span class="text--bold">Selected travel photos – work & play</span>
+  </div>
+</div>
+
+<div class="wrapper--photos">
+  <div class="container--photos">  
+    <% data.content.photos.each_slice(3) do |photo_row|%>
+      
+        <div class="row--photos">
+          <% photo_row.each do |photo|%>
+            <div class="wrapper__img">
+              <%= image_tag(photo.img) %>
+              <span class="photo__caption"><%= photo.caption %></span>
+            </div>
+          <% end %>
+        </div>
+      
+    <% end %>
+
+
+    <%# data.content.photos.each do |photo| %>
+
+      <!-- <div class="wrapper__img"> -->
+        <%#= image_tag(photo.img) %>
+        <!-- <span class="photo__caption"> -->
+        <%#= photo.caption %>
+          
+        <!-- </span> -->
+      <!-- </div> -->
+    <%# end %>
+  </div>
 </div>
 
 <div class="wrapper--colophon">
