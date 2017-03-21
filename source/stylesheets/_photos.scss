@@ -82,6 +82,7 @@
   .wrapper__img > img {
     transform: scale(0.97);
     transition: all 0.2s linear;
+    backface-visibility: hidden;
   }
   .wrapper__img:hover > img {
     box-shadow: 0 0 3px 1px rgba(black, 0.2);
@@ -92,6 +93,7 @@
     opacity: 1;
     height: 1em;
     z-index: 10;
+    transition: all 0.2s linear;
   }
 }
 
