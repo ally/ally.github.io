@@ -81,7 +81,13 @@ title: Ally Long – product design, front-end development
     <ul class="list--clean">
       <% data.content.talks.each do |talk| %>
         <li>
-          <span class="text--bold"><%= talk.organiser %></span>
+          <span class="text--bold">
+          <% if talk.link.present? %>
+            <span><%= link_to(talk.organiser, talk.link) %></span>
+          <% else %>
+            <%= talk.organiser %>
+          <% end %>
+          </span>
           <span><%= talk.title %></span>
           <span class="list__item--meta">
             <span><%= talk.date %></span>

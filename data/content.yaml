@@ -49,7 +49,17 @@ clients:
   - Text Publishing
 
 talks:
+  - organiser: Front Trends
+    link: https://2017.front-trends.com/
+    title: "Upcoming talk: \"Field-tested interfaces for the next billion\""
+    date: 24 May 2017
+    location: Warsaw, Poland
+    video: 
+    slides: 
+    photos:  
+    background: 
   - organiser: CSSConf AU
+    link: http://2016.cssconf.com.au/
     title: "Opening keynote \"Human Compatibility Error: How Novice Tech Users in West Africa Respond to your Fancy CSS\""
     date: 30 November 2016
     location: Melbourne, Australia
@@ -58,6 +68,7 @@ talks:
     photos:  
     background: http://2016.cssconf.com.au/interviews/ally-long/
   - organiser: up.front
+    link: http://up.front.ug/
     title: "Gave talk \"Designing Apps for Tech Newbies\""
     date: 8 November 2016
     location: Berlin, Germany
@@ -65,6 +76,7 @@ talks:
     slides: https://speakerdeck.com/allyelle/upfront-designing-apps-for-tech-newbies
     photos: 
   - organiser: eHealth Academy
+    link:
     title: "Created syllabus and taught a 3-day module for software engineers on design principles and CSS"
     date: 3 - 5 August 2016
     location: Conakry, Guinea
@@ -72,6 +84,7 @@ talks:
     slides: 
     photos: https://www.facebook.com/pg/eHealth.Academy/photos/?ref=page_internal
   - organiser: Global Health Security – Focus Africa
+    link:
     title: "Moderated panel discussion \"How can eHealth improve public health in developing countries?\""
     date: 30 June 2016
     location: Berlin, Germany
@@ -79,6 +92,7 @@ talks:
     slides: 
     photos: http://www.ehealthafrica.org/latest/2016/8/17/global-health-security-focus-africa
   - organiser: Stockholm School of Entrepreneurship
+    link:
     title: Assisted running workshop on “Creative innovation, people, and play”
     date: 12 - 13 March 2016
     location: Stockholm, Sweden
