@@ -49,13 +49,22 @@ clients:
   - Text Publishing
 
 talks:
-  - organiser: Front Trends
-    link: https://2017.front-trends.com/
+  - organiser: Generate London
+    link: https://www.generateconf.com/london
     title: "Upcoming talk: \"Field-tested interfaces for the next billion\""
-    date: 24 May 2017
-    location: Warsaw, Poland
+    date: 20 – 22 September 2017
+    location: London, UK
     video: 
     slides: 
+    photos:  
+    background: 
+  - organiser: Front Trends
+    link: https://2017.front-trends.com/
+    title: "Conference talk: \"Field-tested interfaces for the next billion\""
+    date: 24 – 26 May 2017
+    location: Warsaw, Poland
+    video: 
+    slides: https://speakerdeck.com/allyelle/field-tested-interfaces-for-the-next-billion
     photos:  
     background: 
   - organiser: CSSConf AU
@@ -65,7 +74,7 @@ talks:
     location: Melbourne, Australia
     video: https://youtu.be/skzcEKewOwc?t=1h3m40s
     slides: https://speakerdeck.com/allyelle/human-compatibility-error-how-novice-tech-users-in-west-africa-respond-to-your-fancy-css
-    photos:  
+    photos: https://www.flickr.com/photos/133007374@N04/sets/72157678475207326
     background: http://2016.cssconf.com.au/interviews/ally-long/
   - organiser: up.front
     link: http://up.front.ug/
