@@ -1,7 +1,7 @@
 skills:
 - Product & UX design
-- Prototyping
 - Front-end development
+- Prototyping
 - Design & user research
 - Public speaking
 - Design anthropology
@@ -42,6 +42,7 @@ clients:
   - Fontshop
   - Yours Truly
   - Greenpeace
+  - Ergo Insurance
   - Wirecard
   - Wissenschaftskolleg zu Berlin
   - Hitfox Group 
@@ -72,7 +73,7 @@ talks:
     title: "Opening keynote \"Human Compatibility Error: How Novice Tech Users in West Africa Respond to your Fancy CSS\""
     date: 30 November 2016
     location: Melbourne, Australia
-    video: https://youtu.be/skzcEKewOwc?t=1h3m40s
+    video: https://www.youtube.com/watch?v=JTQU-siFmbQ
     slides: https://speakerdeck.com/allyelle/human-compatibility-error-how-novice-tech-users-in-west-africa-respond-to-your-fancy-css
     photos: https://www.flickr.com/photos/133007374@N04/sets/72157678475207326
     background: http://2016.cssconf.com.au/interviews/ally-long/

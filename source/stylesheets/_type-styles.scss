@@ -89,7 +89,7 @@ h3 {
     @include circle($size: 10px, $color: linear-gradient(to right top, $light-blue 50%, $green 50%));
     margin-right: calc(0.75em - 4px);
     @media only screen and (max-width: $medium-screen) {
-      @include circle($size: 6px);
+      @include circle($size: 6px, $color: linear-gradient(to right top, $light-blue 50%, $green 50%));
     }
   }
 }

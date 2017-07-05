@@ -9,14 +9,15 @@ title: Ally Long – product design, front-end development
     <p class="text--intro">
       <span class="text__divider--large text--bold">Ally Long</span>
       <% data.content.skills.each do |skill| %>
+        <span <%= skill == data.content.skills.last ? "class='last'" : nil %>>
         <% skill_name = skill.split(" ") %>
-          <% skill_name.each do |sn| %>
-            <%= 
-              sn == skill_name.last ? content_tag("span", sn, :class => "text__divider--large") : sn
-            %>
-          <% end %>
+        <% skill_name.each do |sn| %>
+          <%= 
+            sn == skill_name.last ? content_tag("span", sn, :class => "text__divider--large") : sn
+          %>
         <% end %>
-      <span class="text--bold">Currently accepting projects</span>
+        </span>
+      <% end %>
     </p>
     <p class="text--small">
       <span class="text--bold text--prefix">Find me</span>
