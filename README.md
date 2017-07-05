@@ -1,4 +1,4 @@
-# allyelle.com website
+  # allyelle.com website
 
 Built with Middleman. Hosted on GitHub Pages.
 
@@ -15,3 +15,5 @@ Rebase `master`.
 Run `middleman build` to compile site.
 
 Run `middleman deploy` to deploy to GH Pages.
+
+Github settings always reset to the ally.github.io domain after deploy (NFI ¯\_(ツ)_/¯ ). In settings add back custom domain allyelle.com 
