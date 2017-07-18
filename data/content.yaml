@@ -19,7 +19,9 @@ contact:
     link:  "https://speakerdeck.com/allyelle"
 
 jobs:
-  - name: "eHealth Africa "
+  - name: "Field"
+    link: "https://www.fieldintelligence.org"
+  - name: "eHealth Africa"
     link: "http://ehealthafrica.org"
   - name: "Edenspiekermann"
     link: "http://edenspiekermann.com"
@@ -55,6 +57,15 @@ talks:
     title: "Upcoming talk: \"Field-tested interfaces for the next billion\""
     date: 20 – 22 September 2017
     location: London, UK
+    video: 
+    slides: 
+    photos:  
+    background: 
+  - organiser: FrontTalks
+    link: http://fronttalks.ru
+    title: "Upcoming talk: \"Lessons from the field: bringing digital products to emerging markets\""
+    date: 16 – 17 September 2017
+    location: Ekaterinburg, Russia
     video: 
     slides: 
     photos:  
