@@ -60,7 +60,7 @@ talks:
     video: https://www.youtube.com/watch?v=BvqGxz-hMH0&index=7&list=PLb_ziuDPiUzachtYg6udTO_-T0KMikc8B
     slides: https://speakerdeck.com/allyelle/field-tested-interfaces-for-the-next-billion-generate-conf
     photos:  
-    background: 
+    background: http://www.creativebloq.com/inspiration/how-to-design-for-millions-of-new-users
   - organiser: FrontTalks
     link: http://fronttalks.ru
     title: "Conference talk: \"Lessons from the field: bringing digital products to emerging markets\""
