@@ -54,20 +54,20 @@ clients:
 talks:
   - organiser: Generate London
     link: https://www.generateconf.com/london
-    title: "Upcoming talk: \"Field-tested interfaces for the next billion\""
+    title: "Conference talk: \"Field-tested interfaces for the next billion\""
     date: 20 – 22 September 2017
     location: London, UK
-    video: 
-    slides: 
+    video: https://www.youtube.com/watch?v=BvqGxz-hMH0&index=7&list=PLb_ziuDPiUzachtYg6udTO_-T0KMikc8B
+    slides: https://speakerdeck.com/allyelle/field-tested-interfaces-for-the-next-billion-generate-conf
     photos:  
     background: 
   - organiser: FrontTalks
     link: http://fronttalks.ru
-    title: "Upcoming talk: \"Lessons from the field: bringing digital products to emerging markets\""
+    title: "Conference talk: \"Lessons from the field: bringing digital products to emerging markets\""
     date: 16 – 17 September 2017
     location: Ekaterinburg, Russia
     video: 
-    slides: 
+    slides: https://speakerdeck.com/allyelle/lessons-from-the-field-bringing-digital-products-to-emerging-markets
     photos:  
     background: 
   - organiser: Front Trends
@@ -90,7 +90,7 @@ talks:
     background: http://2016.cssconf.com.au/interviews/ally-long/
   - organiser: up.front
     link: http://up.front.ug/
-    title: "Gave talk \"Designing Apps for Tech Newbies\""
+    title: "Meet-up talk \"Designing Apps for Tech Newbies\""
     date: 8 November 2016
     location: Berlin, Germany
     video: 
