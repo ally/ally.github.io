@@ -52,6 +52,15 @@ clients:
   - Text Publishing
 
 talks:
+  - organiser: O'Reilly Fluent
+    link: https://conferences.oreilly.com/fluent/fl-ca
+    title: "Upcoming: \"Field-tested interfaces for the next billion\""
+    date: 12 – 14 June 2018
+    location: San Jose, USA
+    video: 
+    slides:
+    photos:  
+    background:
   - organiser: Generate London
     link: https://www.generateconf.com/london
     title: "Conference talk: \"Field-tested interfaces for the next billion\""
